@@ -3,10 +3,9 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 def main():
-    try:
-        x = 10 / 0
-    except ZeroDivisionError as e:
-        logging.error("Division by zero occurred", exc_info=True)
+    logging.info("Script started.")
+    #error
+    x = 10 / 0
 
 if __name__ == "__main__":
     main()
